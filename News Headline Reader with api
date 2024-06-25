@@ -1,4 +1,9 @@
-//News preview with api
+//Project Title: News Headline Reader with API
+
+//Description:
+//This project utilizes an API to display a list of news headlines with additional information like
+//author, publication date, and a brief description.
+//Each headline will also be accompanied by a relevant image.
 
 var news=[{title:'Elden Ring Players Are Review Bombing Tough As Nails DLC - Kotaku', author:"Willa Rowe", description:"Shadow of the Erdtree is leading to more discussion of FromSoftware's penchant for producing really hard games",url:"https://kotaku.com/elden-ring-shadow-of-the-erdtree-steam-reviews-1851557175",urlToImage:"https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/695c059178183df8353e23cc65434cb3.jpg",publishedAt:"2024-06-24T17:45:00Z",},
          {"title":"US Supreme Court to hear Tennessee transgender care case - BBC.com","author":null,"description":"Plaintiffs claim the state law prohibits transgender people from accessing care available to other adolescents.","url":"https://www.bbc.com/news/articles/c6ppp6y5e9zo","urlToImage":"https://ichef.bbci.co.uk/news/1024/branded_news/db6e/live/c6b3fdd0-324d-11ef-981a-1b725483a1f2.jpg","publishedAt":"2024-06-24T17:42:23Z"},

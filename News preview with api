@@ -1,0 +1,24 @@
+//News preview with api
+
+var news=[{title:'Elden Ring Players Are Review Bombing Tough As Nails DLC - Kotaku', author:"Willa Rowe", description:"Shadow of the Erdtree is leading to more discussion of FromSoftware's penchant for producing really hard games",url:"https://kotaku.com/elden-ring-shadow-of-the-erdtree-steam-reviews-1851557175",urlToImage:"https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/695c059178183df8353e23cc65434cb3.jpg",publishedAt:"2024-06-24T17:45:00Z",},
+         {"title":"US Supreme Court to hear Tennessee transgender care case - BBC.com","author":null,"description":"Plaintiffs claim the state law prohibits transgender people from accessing care available to other adolescents.","url":"https://www.bbc.com/news/articles/c6ppp6y5e9zo","urlToImage":"https://ichef.bbci.co.uk/news/1024/branded_news/db6e/live/c6b3fdd0-324d-11ef-981a-1b725483a1f2.jpg","publishedAt":"2024-06-24T17:42:23Z"},
+          {"title":"Princess Anne hospitalized for injuries and a concussion in an 'incident' - The Associated Press","description":"Princess Anne has been hospitalized after an accident thought to involve a horse left her with a concussion. The incident further strains Britain’s royal family as health problems continue to limit public appearances by King Charles III and the Princess of Wa…","url":"https://apnews.com/article/britain-princess-anne-injuries-cc8ab12e8ae843e00f58f2eba449c0fb","urlToImage":"https://dims.apnews.com/dims4/default/0ad57bc/2147483647/strip/true/crop/4096x2304+0+212/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fbf%2Fc2%2F1d8bc71282832001b52f8abf2bbe%2F5039ab6b352e46ac95f95f1ab32d1539","publishedAt":"2024-06-24T17:37:00Z"},
+          {"title":"After attack in Dagestan, Russian officials minimize Islamic State claim - The Washington Post","description":"Some Russian officials blamed Ukraine and the United States for a terrorist attack in the predominantly Muslim region of Dagestan despite the region’s long legacy of Islamist violence.","url":"https://www.washingtonpost.com/world/2024/06/24/dagestan-terror-attack-death-toll/","urlToImage":"https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/OW7BAUKZEFZRHJ7QSAF67NWFZU_size-normalized.jpg&w=1440","publishedAt":"2024-06-24T16:42:38Z"},
+          {title:'Elden Ring Players Are Review Bombing Tough As Nails DLC - Kotaku', author:"Willa Rowe", description:"Shadow of the Erdtree is leading to more discussion of FromSoftware's penchant for producing really hard games",url:"https://kotaku.com/elden-ring-shadow-of-the-erdtree-steam-reviews-1851557175",urlToImage:"https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/695c059178183df8353e23cc65434cb3.jpg",publishedAt:"2024-06-24T17:45:00Z",}];
+
+
+var html = '';
+for(var singleNews of news){
+    
+   html = html + `<div>
+  <p><h1>${singleNews.title}</h1><br>
+  <h2>${singleNews.author}</h2><h3>${singleNews.publishedAt}</h3><br>
+  ${singleNews.url}<br> 
+  ${singleNews.description} </p>
+  <img src = ' ${singleNews.urlToImage}'/>
+  </div>
+  `;
+    
+    //console.log(html);
+}
+document.body.innerHTML = html;

@@ -1,0 +1,27 @@
+// creating an array of objects
+//each object contains song name, artist name, cover art and audio preview
+
+var songs=[{name:'Snow on the Beach', artist:"Taylor Swift (ft. lana del rey)", artcover:"https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/59/13/5c/59135ccc-8425-415c-7f89-8aeada60088e/22UM1IM22440.rgb.jpg/30x30bb.jpg", audio:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/b0/07/5cb007c4-31a7-0376-33b6-cd228c2ecb5e/mzaf_11328119565749728600.plus.aac.p.m4a"},
+          {name:'Summertime Sadness (Lana Del Rey vs. Cedric Gervais)', artist:"Lana Del Rey & Cedric Gervais", artcover:"https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/59/13/5c/59135ccc-8425-415c-7f89-8aeada60088e/22UM1IM22440.rgb.jpg/30x30bb.jpg", audio:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fa/5a/ed/fa5aed2a-f5a4-2df9-f059-b0f464cdd713/mzaf_1870315243595697920.plus.aac.p.m4a"},
+          {name:'Snow on the Beach', artist:"Taylor Swift (ft. lana del rey)", artcover:"https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/59/13/5c/59135ccc-8425-415c-7f89-8aeada60088e/22UM1IM22440.rgb.jpg/30x30bb.jpg", audio:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/b0/07/5cb007c4-31a7-0376-33b6-cd228c2ecb5e/mzaf_11328119565749728600.plus.aac.p.m4a"},
+          {name:'Snow on the Beach', artist:"Taylor Swift (ft. lana del rey)", artcover:"https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/59/13/5c/59135ccc-8425-415c-7f89-8aeada60088e/22UM1IM22440.rgb.jpg/30x30bb.jpg", audio:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/b0/07/5cb007c4-31a7-0376-33b6-cd228c2ecb5e/mzaf_11328119565749728600.plus.aac.p.m4a"},
+          { name:'Snow on the Beach', artist:"Taylor Swift (ft. lana del rey)", artcover:"https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/59/13/5c/59135ccc-8425-415c-7f89-8aeada60088e/22UM1IM22440.rgb.jpg/30x30bb.jpg", audio:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/b0/07/5cb007c4-31a7-0376-33b6-cd228c2ecb5e/mzaf_11328119565749728600.plus.aac.p.m4a"}];
+
+//iterating through an array and storing each pbject info in html on form of string
+var html='';
+for(var singleSong of songs){
+
+    html= html+ `<div>
+    <p> ${singleSong.name} ${singleSong.artist} ${singleSong.coverart} ${singleSong.audio}</p>
+    <img src='${singleSong.coverart}'>
+    <audio>
+    <source src='${singleSong.audio}'>
+    </audio>
+    </div>`
+
+    console.log(html);
+}
+
+// using document body assigning html
+value which then displays details on the web page
+document.body.innerHTML=html;

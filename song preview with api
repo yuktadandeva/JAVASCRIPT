@@ -1,3 +1,13 @@
+//Project Title: Song Previews with iTunes API
+
+//Description:
+
+//This project allows you to display song previews for a chosen artist on a web page.
+//It utilizes the iTunes Search API to fetch song information and dynamically creates HTML elements for
+//each song with its cover image, title, artist, and a playable audio preview.
+
+
+
 // creating an array of objects
 //each object contains song name, artist name, cover art and audio preview
 

@@ -18,7 +18,7 @@ for(var singleNews of news){
    html = html + `<div>
   <p><h1>${singleNews.title}</h1><br>
   <h2>${singleNews.author}</h2><h3>${singleNews.publishedAt}</h3><br>
-  ${singleNews.url}<br> 
+  <a href=${singleNews.url}>click here for more</a><br> 
   ${singleNews.description} </p>
   <img src = ' ${singleNews.urlToImage}'/>
   </div>
